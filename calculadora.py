@@ -1,9 +1,16 @@
+''' Clase para realizar operaciones básicas '''
 class Calculadora:
     def __init__(self):
-        self.valor1 = 0
-        self.valor2 = 0
+        self.valor_1 = 0
+        self.valor_2 = 0
         self.resultado = 0
-    
-    def sumar(self):
-        self.resultado = self.valor1 + self.valor2
+    ''' Operación suma '''
+    def sumar(self) -> None:
+        self.resultado = self.valor_1 + self.valor_2
+    ''' Operación resta '''
+    def restar(self) -> None:
+        self.resultado = self.valor_1 - self.valor_2
+    ''' Operación multiplicación '''
+    def multiplicar(self) -> None:
+        self.resultado = self.valor_1 * self.valor_2
 
