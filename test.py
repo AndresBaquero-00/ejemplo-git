@@ -5,5 +5,10 @@ c.valor_1 = 5
 c.valor_2 = 10
 
 c.sumar()
-
 print(c.valor_1, '+', c.valor_2, '=', c.resultado)
+
+c.restar()
+print(c.valor_1, '-', c.valor_2, '=', c.resultado)
+
+c.multiplicar()
+print(c.valor_1, '*', c.valor_2, '=', c.resultado)
