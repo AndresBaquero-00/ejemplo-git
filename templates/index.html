@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/index.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename = 'js/index.js') }}"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <form action="" method="POST" id="form">
+        <input type="text" id="input" value="{{ resultado }}">
+        <table>
+            <tr>
+                <td>
+                    <button type="button" class="numero" value="7">7</button>
+                </td>
+                <td>
+                    <button type="button" class="numero" value="8">8</button>
+                </td>
+                <td>
+                    <button type="button" class="numero" value="9">9</button>
+                </td>
+                <td>
+                    <button type="button" class="operador" value="+">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="numero" value="4">4</button>
+                </td>
+                <td>
+                    <button type="button" class="numero" value="5">5</button>
+                </td>
+                <td>
+                    <button type="button" class="numero" value="6">6</button>
+                </td>
+                <td>
+                    <button type="button" class="operador" value="-">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="numero" value="1">1</button>
+                </td>
+                <td>
+                    <button type="button" class="numero" value="2">2</button>
+                </td>
+                <td>
+                    <button type="button" class="numero" value="3">3</button>
+                </td>
+                <td>
+                    <button type="button" class="operador" value="*">*</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="numero" value="0">0</button>
+                </td>
+                <td>
+                    <button type="button" id="enviar" value="=">=</button>
+                </td>
+                <td>
+                    <button type="button" id="limpiador" value="C">C</button>
+                </td>
+                <td>
+                    <button type="button" class="operador" value="/">/</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

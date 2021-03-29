@@ -13,4 +13,7 @@ class Calculadora:
     ''' Operación multiplicación '''
     def multiplicar(self) -> None:
         self.resultado = self.valor_1 * self.valor_2
+    ''' Operación división '''
+    def dividir(self) -> None:
+        self.resultado = self.valor_1 / self.valor_2
 
